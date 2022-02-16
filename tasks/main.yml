@@ -1,12 +1,5 @@
 ---
 
-- name: Check nextcloud_task_instance
-  fail:
-    msg: 'nextcloud_task_instance is required'
-  when: nextcloud_task_instance == ''
-  tags:
-    - nextcloud
-
 - name: Check nextcloud_task_name
   fail:
     msg: 'nextcloud_task_name is required'
