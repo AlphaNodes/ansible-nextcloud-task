@@ -27,7 +27,7 @@ Installed nextcloud.
   vars:
     nextcloud_task_name: cron
   roles:
-    - AlphaNodes.nextcloud-task
+    - alphanodes.nextcloud_task
 ```
 
 ## Example Playbook for console run
@@ -39,7 +39,7 @@ Installed nextcloud.
     nextcloud_console_command: maintenance:mimetype:update-db
 
   roles:
-    - AlphaNodes.nextcloud-task
+    - alphanodes.nextcloud_task
 ```
 
 ## License

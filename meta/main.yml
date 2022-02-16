@@ -2,7 +2,7 @@
 
 galaxy_info:
   role_name: nextcloud_task
-  namespace: AlphaNodes
+  namespace: alphanodes
   description: Run nextcloud cron job or console commands
   author: alexandermeindl
   company: AlphaNodes GmbH
