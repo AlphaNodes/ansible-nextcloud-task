@@ -2,8 +2,6 @@
 
 Run console task for nextcloud on Debian / Ubuntu.
 
-At the moment only cron is supported.
-
 ## Installation
 
 ### Ansible 2+
@@ -22,12 +20,24 @@ Available variables are listed below, along with default values (see `defaults/m
 
 Installed nextcloud.
 
-## Example Playbook
+## Example Playbook for cron run
 
 ```yaml
 - hosts: server-name
   vars:
     nextcloud_task_name: cron
+  roles:
+    - AlphaNodes.nextcloud-task
+```
+
+## Example Playbook for console run
+
+```yaml
+- hosts: server-name
+  vars:
+    nextcloud_task_name: console
+    nextcloud_console_command: maintenance:mimetype:update-db
+
   roles:
     - AlphaNodes.nextcloud-task
 ```

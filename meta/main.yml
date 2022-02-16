@@ -1,8 +1,9 @@
 ---
 
 galaxy_info:
-  role_name: nextcloud-task
-  description: Run nextcloud cron job
+  role_name: nextcloud_task
+  namespace: AlphaNodes
+  description: Run nextcloud cron job or console commands
   author: alexandermeindl
   company: AlphaNodes GmbH
   license: GPL Version 3
@@ -17,5 +18,6 @@ galaxy_info:
         - buster
         - bullseye
   galaxy_tags:
-    - nextclound
+    - nextcloud
     - cron
+    - console
