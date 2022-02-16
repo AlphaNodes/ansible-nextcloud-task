@@ -4,4 +4,10 @@
   become: true
   become_user: '{{ nextcloud_user }}'
   command: 'php -f {{ nextcloud_htdocs }}/cron.php'
+  register: task_result
   when: (mysql_replication_role is undefined or mysql_replication_role == 'master') and (sync_master is undefined)
+
+- name: Output of task
+  debug:
+    var: task_result.stdout_lines
+  when: task_result.stdout_lines is defined and task_result.stdout_lines | length
