@@ -8,7 +8,7 @@ Run console task for nextcloud on Debian / Ubuntu.
 
 Using ansible galaxy cli:
 
-```bash
+```shell
 ansible-galaxy install alphanodes.nextcloud-task
 ```
 
