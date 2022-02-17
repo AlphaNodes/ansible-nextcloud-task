@@ -3,4 +3,4 @@
   hosts: all
 
   roles:
-    - role: AlphaNodes.nextcloud-task
+    - role: alphanodes.nextcloud_task
